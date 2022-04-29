@@ -1,0 +1,76 @@
+<!-- The structure for this template is code adapted from https://cs.nyu.edu/~deigen/depth/ -->
+<!-- Please site this website if made public -->
+<HTML>
+<HEAD>
+<title>MyProject: Deep Neural Networks with Physical Layers</title>
+<LINK REL="stylesheet" HREF="style.css">
+</HEAD>
+<BODY bgcolor="white">
+<center>
+<h2>Evaluation of Influence of Physical Layers to Brain
+    Segmentation</h2>
+<h3>Xuan Liu &nbsp;&nbsp;&nbsp;&nbsp;
+    Yu Miao &nbsp;&nbsp;&nbsp;&nbsp;
+</h3>
+<h4>
+xuan.liu115<!-- x -->@<!-- -->duke.<!-- h -->edu
+&nbsp;&nbsp;&nbsp;
+yu.miao148<!-- x -->@<!-- -->duke.<!-- h -->edu
+&nbsp;&nbsp;&nbsp;
+</h4>
+<p>
+<table border=0 width="25%">
+<tr>
+<!-- Provide link to your paper below -->
+<td align="center"><a href="Evaluation of Influence of Physical Layers to Brain Segmentation.pdf"><font size="+1">Paper PDF</font></a>
+</tr>
+</table>
+
+<!-- Provide link to your "teaser figure - this should summarize your findings at a glace" -->
+<p>
+<img src="process.png" width="60%">
+<p>
+<img src="lesionwithmask.png" width="60%">
+<p>
+<table width="80%">
+<tr><td align="left">
+<p>
+    In this project, we used a computer-aided diagnosing system to segments the brain
+    lesion from Magnetic Resonance Imaging (MRI) scanned images with multiple
+    convolutional layers to simulate the effects of physical layers.The dataset is Brain
+    MRI segmentation from Kaggle. This dataset contains brain MR images from 110
+    patients from 5 institutions with 3930 brain MRI images and 3930 manual FLAIR
+    abnormality segmentation masks. The images were obtained from The Cancer
+    Imaging Archive (TCIA)[1]. The U-net model is adapted from MONAI frame
+    work[2]. All images are preprocessed by multiple three-by-three convolutional
+    layers and one one-by-one convolutional layer to simulate the illumination effects.
+    After training, the results are evaluated by pixel accuracy metric and the perfor-
+    mance score are calculated. For future work, there are multiple parameters such as
+    adding gaussian kernel and changing gamma value of contrasts could be tunned to
+    test out the performance of the model.
+
+<p>
+
+<tr><td align="center">
+<br>
+
+<!-- Provide link to your write-up -->
+<tr><td align="left">
+Paper:
+<ul>
+<li><a href="Evaluation of Influence of Physical Layers to Brain Segmentation.pdf"><font size="+1">Paper PDF</font></a>
+</ul>
+
+<tr><td align="left">
+Code and Data:
+<ul>
+<li>You can provide a link to your code here: <a href=https://colab.research.google.com/drive/1zhn2dCs8tO86CbOKM1zb_pta-0fAgem4?usp=sharing>Link</a>
+<li> Data Source: <a href="https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation">here</a>
+</ul>
+
+</table>
+</center>
+
+
+
+</BODY>
